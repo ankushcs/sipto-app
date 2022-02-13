@@ -1,0 +1,28 @@
+@import "../Variables/Variables.scss";
+
+.reply-item-container {
+  border-radius: 30px;
+  background: #06061e;
+  box-shadow: 26px 26px 46px #030310, -26px -26px 46px #09092c;
+  padding: 25px;
+  transition: all ease-in-out 0.3s;
+  margin-bottom: 50px;
+
+  h2 {
+    font-size: 1.7rem;
+    font-family: $heading-font;
+    color: $heading-color;
+    letter-spacing: 2px;
+  }
+
+  p{
+    font-family: $text-font;
+    color: $text-color;
+    letter-spacing:2px;
+  }
+}
+
+.reply-item-container:hover{
+    transform: scale(1.02);
+}
+

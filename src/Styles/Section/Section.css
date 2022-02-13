@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 50px 0;
+  background: #243747;
+  background: -webkit-gradient(linear, left top, right top, from(#243747), to(#4b74a0));
+  background: linear-gradient(90deg, #243747 0%, #4b74a0 100%);
+  border-radius: 50px;
+  height: 300px;
+}
+
+.section-img {
+  height: 100%;
+  width: auto;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.section-text-container {
+  padding: 25px;
+}
+
+.section-text-container h1 {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.section-text-container p {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 500px) {
+  .section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: auto;
+  }
+  .section-img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0px;
+  }
+  .section-text-container {
+    padding: 25px;
+  }
+  .section-text-container h1 {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+  }
+  .section-text-container p {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=Section.css.map */

@@ -1,0 +1,39 @@
+@import "../Variables/Variables.scss";
+
+.home-card {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #05051b, #060620);
+  box-shadow: 19px 19px 14px #02020c, -19px -19px 14px #0a0a30;
+  width: 320px;
+}
+
+.home-card-image {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  height: 100%;
+  width: 100%;
+}
+
+.home-card-text-container {
+  padding: 10px 30px;
+
+  h1 {
+    color: $heading-color;
+    font-family: $heading-font;
+    font-size: 1.7rem;
+  }
+
+  p {
+    color: $text-color;
+    font-family: $text-font;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .home-card{
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  
+}

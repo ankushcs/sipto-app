@@ -1,0 +1,67 @@
+@import '../Variables/Variables.scss';
+
+.header-container{
+    width: 100%;
+    background-color: $header-bg-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 10px 25px;
+
+}
+
+.header__heading-container__text{
+    color: $heading-color;
+    font-family: $heading-font;
+    font-size: 1.8rem;
+}
+
+.header__list-items-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__list_item{
+    list-style: none;
+    margin-right: 10px;
+    color : $text-color;
+    font-family: $text-font;
+}
+
+.header__list_item:hover{
+    color: $hover-color;
+}
+
+@media screen and (max-width: 500px){
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: flex-start;
+    }
+
+    .header__heading-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header__list-items-container {
+        flex-direction: column;
+        height: auto;
+        width : 100%;
+    }
+    .header__list_item:nth-child(1){
+        border-top: 1px solid rgba(255, 255, 255, 0.555);
+        margin-top: 50px;
+    }
+    .header__list_item {
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.555);
+        text-align: center;
+        margin-right: 0px;
+        padding: 20px 0;
+    }
+}

@@ -1,0 +1,75 @@
+@import "../Variables/Variables.scss";
+
+.section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 50px 0;
+  background: hsla(208, 33%, 21%, 1);
+  background: linear-gradient(
+    90deg,
+    hsla(208, 33%, 21%, 1) 0%,
+    hsla(211, 36%, 46%, 1) 100%
+  );
+  border-radius: 50px;
+  height: 300px;
+}
+
+.section-img {
+  height: 100%;
+  width: auto;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.section-text-container {
+  padding: 25px;
+
+  h1 {
+    font-family: $heading-font;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  p {
+    font-family: $text-font;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height:auto;
+  }
+
+  .section-img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .section-text-container {
+    padding: 25px;
+  
+    h1 {
+      font-family: $heading-font;
+      font-weight: 600;
+      letter-spacing: 2px;
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-family: $text-font;
+      font-weight: 600;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+    }
+  }
+}

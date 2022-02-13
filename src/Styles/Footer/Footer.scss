@@ -1,0 +1,149 @@
+@import '../Variables/Variables.scss';
+
+.footer-main-container{
+    // position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: $footer-bg-color;
+    width: 100%;
+    padding : 25px
+}
+
+.footer__top-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+
+.footer__top__first-container{
+    flex: 2;
+    min-width: 320px;
+}
+
+.footer__top__second-container{
+    flex: 1;
+    min-width: 320px;
+
+    ul{
+        margin: 0;
+        padding: 0;
+
+        li{
+            list-style: none;
+            color: $text-color;
+            font-family: $text-font;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.footer__top__third-container{
+    flex: 1;
+    min-width: 320px;
+
+    ul{
+        margin: 0;
+        padding: 0;
+
+        li{
+            list-style: none;
+            color: $text-color;
+            font-family: $text-font;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.footer__heading{
+    color: $heading-color;
+    font-family: $heading-font;
+    font-size: 1.8rem;
+}
+
+.footer__top__first-container__text{
+    color: $text-color;
+    font-family: $text-font;
+    width: 70%;
+    letter-spacing: 1px;
+}
+
+
+.footer__bottom-container{
+    border-top: 2px solid #a09f9f;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__bottom-container__list-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    li{
+        list-style: none;
+        margin: 0 10px;
+        color: $text-color;
+        font-family: $text-font;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer-main-container{
+        position: relative;
+    }
+
+    .footer__heading{
+        font-size: 1.3rem;
+    }
+
+    .footer__top__first-container__text{
+        font-size: 0.8rem;
+    }
+
+    .footer__top__second-container{
+    
+        ul{
+    
+            li{
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .footer__top__third-container{
+    
+        ul{
+    
+            li{
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .footer__bottom-container__list-container{
+        li{
+            font-size: 0.8rem;
+        }
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .footer__bottom-container{
+       flex-wrap: wrap;
+    }
+
+    .footer__bottom-container__list-container{
+        margin-top: 15px;
+        margin-left: 0;
+        padding-left: 0;
+        font-size: 1rem;
+    }
+    
+}

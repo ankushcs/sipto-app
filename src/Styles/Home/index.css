@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+.home-container {
+  min-height: 100vh;
+  background-color: #06061E;
+  padding-bottom: 100px;
+}
+
+.home-first-container {
+  background-image: url("../../images/main-img.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-first-container h1 {
+  width: 400px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  color: #e9e9e9;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.home-second-container__text-container {
+  text-align: center;
+  padding: 100px 50px;
+}
+
+.home-second-container__text-container h1 {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  color: #e9e9e9;
+}
+
+.home-second-container__text-container p {
+  font-family: "Oswald", sans-serif;
+  color: #c7c7c7;
+  letter-spacing: 2px;
+}
+
+.home-second-container__card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 50px;
+}
+
+.home-third-container {
+  padding: 100px 50px;
+}
+
+.home-third-container-text-container {
+  text-align: center;
+  padding: 50px 50px;
+}
+
+.home-third-container-text-container h1 {
+  color: #e9e9e9;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+.home-third-container-text-container p {
+  color: #c7c7c7;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+}
+
+.home-fourth-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.home-fourth-container h1 {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  color: #e9e9e9;
+}
+
+.home-fourth-container p {
+  font-family: "Oswald", sans-serif;
+  color: #c7c7c7;
+  letter-spacing: 2px;
+  margin: 35px 0;
+}
+
+.home-fourth-container button {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+}
+
+.home-fifth-container {
+  text-align: center;
+  padding: 100px 50px;
+}
+
+.home-fifth-container h1 {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  color: #e9e9e9;
+}
+
+.reply-items-container {
+  margin: 50px 0;
+}
+
+@media screen and (max-width: 500px) {
+  .home-first-container {
+    background-image: url("../../images/main-img-sm.jpg");
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .home-first-container h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  .home-third-container-text-container {
+    padding: 25px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 790px) {
+  .home-first-container {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .home-first-container h1 {
+    font-size: 2.5rem;
+    width: 200px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,139 @@
+@import '../Variables/Variables.scss';
+
+.home-container{
+    min-height: 100vh;
+    background-color:#06061E;
+    padding-bottom: 100px;
+}
+
+.home-first-container{
+    background-image: $home-bg-image;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    padding: 25px;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+
+    h1{
+        width: 400px;
+        font-family: $heading-font;
+        color: $heading-color;
+        font-size: 4rem;
+        font-weight: 600;
+        letter-spacing:1px;
+    }
+}
+
+.home-second-container__text-container{
+    text-align:center;
+    padding: 100px 50px;
+
+    h1{
+        font-family: $heading-font;
+        color: $heading-color;
+    }
+
+    p{
+        font-family: $text-font;
+        color: $text-color;
+        letter-spacing: 2px;
+    }
+}
+
+
+.home-second-container__card-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+}
+
+
+.home-third-container{
+    padding: 100px 50px;
+}
+
+
+.home-third-container-text-container{
+    text-align: center;
+    padding: 50px 50px;
+
+    h1{
+        color: $heading-color;
+        font-family: $heading-font;
+    }
+
+    p{
+        color: $text-color;
+        font-family: $text-font;
+        letter-spacing:2px;
+    }
+
+}
+
+.home-fourth-container{
+    text-align:center;
+    padding : 50px;
+
+    h1{
+        font-family: $heading-font;
+        color: $heading-color;
+    }
+
+    p{
+        font-family: $text-font;
+        color: $text-color;
+        letter-spacing:2px;
+        margin: 35px 0;
+    }
+
+    button{
+        font-family: $text-font;
+        letter-spacing: 2px;
+    }
+
+}
+
+
+.home-fifth-container{
+    text-align:center;
+    padding : 100px 50px;
+
+    h1{
+        font-family: $heading-font;
+        color: $heading-color;
+    }
+}
+
+.reply-items-container{
+    margin: 50px 0;
+}
+
+@media screen and (max-width: 500px){
+    .home-first-container{
+        background-image: $home-bg-image-sm;
+        align-items: flex-start;
+
+        h1{
+            font-size: 2.5rem;
+            font-weight: 400;
+        }
+    }
+
+    .home-third-container-text-container{
+        padding : 25px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 790px){
+    .home-first-container{
+        align-items: flex-end;
+        h1{
+            font-size: 2.5rem;
+            width : 200px;
+        }
+    }
+}
